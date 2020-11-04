@@ -1,0 +1,231 @@
+@import '_colors';
+
+%section{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* portada*/
+
+%h-portada{
+    text-align: start;
+    color: $white;
+    position: relative;
+    right: 0;
+    top: 0;
+    font-size: 45px;
+    text-shadow: 3px 3px 2px $grey-text;
+}
+
+%img-portada{
+    width: 100%;
+    margin-top: 50px;
+}
+
+%caption {
+    position: absolute;
+    z-index: 1;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+%absolut-div{
+    position: absolute;
+    top: 241px;
+    left: 200px;
+    right: 0;
+    bottom: 0;
+}
+
+%h1{
+    display: table-cell;
+    vertical-align: left;
+    text-align: left;
+}
+
+
+
+/* NOSOTROS*/
+
+%img-dr{
+    margin: 5px;
+    width: 80%;
+    border-radius: 50%;
+}
+
+%name-dr{
+    text-align: center;
+    color: $white;
+    font-weight: 100;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+/* TRATAMIENTO*/
+
+%box-tratamiento{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin hover-img {
+    transform: scale(1.2,1.2);
+    transition: all 0.5s;
+}
+
+
+
+/*OBRAS SOCIALES*/
+
+%sec-os{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/*BLOG*/
+
+@mixin hover-img2 {
+    transform: scale(1.02,1.02);
+    transition: all 0.5s;
+}
+
+
+/*PAGINA TRATAMIENTOS*/
+
+%p-italic-card{
+    font-style: italic;
+    color: $brand-blue;
+    font-weight: bold;
+}
+
+%img-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*PAGINA CONTACTO*/
+
+%box-form{
+    background-color: $white;
+    border-radius: 30px;
+    border: 1px solid $brand-green;
+    box-shadow:  3px 3px 2px rgb(161, 161, 161);
+    height: 400px;
+    padding: 25px;
+}
+
+@mixin portada-md {
+    .absolute-div {
+        position: absolute;
+        top: 146px;
+        left: 128px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .h1-index{
+        font-size: 35px;
+    }
+}
+
+@mixin portada-960 {
+    .absolute-div {
+        position: absolute;
+        top: 75px;
+        left: 104px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .h1-index{
+        font-size: 29px;
+    }
+}
+
+@mixin media-767 {
+    .absolute-div {
+        position: absolute;
+        top: 75px;
+        left: 39px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .h1-index{
+        font-size: 25px;
+    }
+}
+
+
+@mixin media-569 {
+    .pag-uno img{
+        width: 25%;
+        height: 25%;
+    }
+    .absolute-div {
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        right: 0;
+        bottom: 0;
+    }
+    .h1-index{
+        font-size: 17px;
+    }
+
+    .img-nosotros img{
+        margin: 5px;
+        width: 50%;
+        border-radius: 50%;
+    }
+
+    .p-nosotros{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@mixin media-414 {
+    .pag-uno img{
+        width: 25%;
+        height: 25%;
+    }
+    .absolute-div {
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        right: 0;
+        bottom: 0;
+    }
+    .h1-index{
+        font-size: 17px;
+    }
+    .img-nosotros img{
+        margin: 5px;
+        width: 50%;
+        border-radius: 50%;
+    }
+    .p-nosotros{
+        width: 100%;
+        font-size: 15px;
+    }
+    .titulo-section, .subtitulo-sec{
+        font-size: 25px;
+    }
+
+    .section{
+        padding: 40px;
+    }
+}

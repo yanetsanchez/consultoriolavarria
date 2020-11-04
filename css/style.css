@@ -1,0 +1,415 @@
+.section {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* portada*/
+.h1-index {
+  text-align: start;
+  color: #ffffff;
+  position: relative;
+  right: 0;
+  top: 0;
+  font-size: 45px;
+  text-shadow: 3px 3px 2px #616060;
+}
+
+.slide-imagenes img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.carousel-caption {
+  position: absolute;
+  z-index: 1;
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+/* NOSOTROS*/
+.img-nosotros img {
+  margin: 5px;
+  width: 80%;
+  border-radius: 50%;
+}
+
+.name-nosotros {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 100;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* TRATAMIENTO*/
+.link-tratamiento {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*OBRAS SOCIALES*/
+.photogrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+/*BLOG*/
+/*PAGINA TRATAMIENTOS*/
+.card-body p.italic {
+  font-style: italic;
+  color: #336699;
+  font-weight: bold;
+}
+
+.img-tratamiento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*PAGINA CONTACTO*/
+.caja {
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 1px solid #48CDB2;
+  box-shadow: 3px 3px 2px #a1a1a1;
+  height: 400px;
+  padding: 25px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, p, a {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*HEADER*/
+header {
+  background-color: #48CDB2;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+.nav-link:hover {
+  background-color: #ffffff;
+  color: #48CDB2 !important;
+}
+
+/* PORTADA*/
+.btn-1 {
+  z-index: 1;
+  background-color: #48CDB2;
+  color: #ffffff;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.absolute-div {
+  position: absolute;
+  top: 241px;
+  left: 200px;
+  right: 0;
+  bottom: 0;
+}
+
+.absolute-div1 {
+  position: absolute;
+  top: 500px;
+  left: 236px;
+  right: 0;
+  bottom: 0;
+}
+
+.carousel-caption h1 {
+  display: table-cell;
+  vertical-align: left;
+  text-align: left;
+}
+
+/* NOSOTROS*/
+.nosotros {
+  background-color: #336699;
+}
+
+.nosotros .titulo-section, .p-section {
+  color: #ffffff;
+  text-align: center;
+}
+
+.nosotros h2, .p-bold {
+  font-weight: bold;
+}
+
+.nosotros .p-italic {
+  font-style: italic;
+}
+
+.p-nosotros {
+  width: 80%;
+}
+
+/*TRATAMIENTOS*/
+.tratamientos {
+  background-color: #f5f5f5;
+}
+
+.tratamientos h2 {
+  font-weight: bold;
+  color: #336699;
+}
+
+.tratamientos a {
+  font-weight: bold;
+  color: #336699;
+  text-decoration: none;
+}
+.tratamientos a:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 0.5s;
+}
+
+/*OBRAS SOCIALES*/
+.photogrid .photo {
+  margin: 10px;
+}
+
+/*CONTACTO*/
+.contacto {
+  background-color: #f5f5f5;
+}
+
+.contacto .titulo-section {
+  color: #336699;
+}
+
+.contacto h2, h3 {
+  font-weight: bold;
+  text-align: center;
+  color: #616060;
+}
+
+.contacto p {
+  text-align: center;
+  color: #616060;
+}
+
+.contactar .btn-primary {
+  background-color: #336699;
+}
+.contactar .btn-primary:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #336699;
+}
+
+.button-contactar {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/*BLOG*/
+.videos {
+  background-color: #336699;
+}
+
+.videos .titulo-section {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.videos img {
+  width: 100%;
+}
+
+.link-video img:hover {
+  transform: scale(1.02, 1.02);
+  transition: all 0.5s;
+}
+
+/* FOOTER*/
+.footer {
+  background-image: linear-gradient(to bottom, #336699, #48CDB2);
+  border-top: 1PX solid #ffffff;
+}
+
+.footer .container {
+  align-items: flex-start;
+}
+
+.footer p {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.f-section {
+  margin-top: 20px;
+}
+
+/*PAGINA TRATAMIENTOS*/
+.tratamiento p {
+  text-align: start;
+}
+
+.tratamiento h2 {
+  color: #336699;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tratamiento .btn-link {
+  color: #336699;
+  font-weight: bold;
+}
+
+.img-tratamiento img {
+  width: 90%;
+}
+.img-tratamiento img:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 0.5s;
+}
+
+.info-tratamiento h3 {
+  color: #336699;
+}
+
+.info-tratamiento p {
+  color: #616060;
+}
+
+.li.tratamiento {
+  list-style: none;
+}
+
+/*PAGINA CONTACTAR*/
+.contactar p {
+  color: #616060;
+}
+
+.contactar-uno label {
+  font-family: "Montserrat", sans-serif;
+  color: #616060;
+  font-size: 15px;
+}
+
+.contactar input select {
+  margin: 15px 0;
+}
+
+.contactar-uno button {
+  background-color: #48CDB2;
+}
+
+.btn-contacto {
+  background-color: #48CDB2;
+  color: #ffffff;
+  margin: 0 10px;
+}
+.btn-contacto:hover {
+  background-color: #f5f5f5;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 961px) {
+  .absolute-div {
+    position: absolute;
+    top: 146px;
+    left: 128px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .h1-index {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 960px) and (min-width: 768px) {
+  .absolute-div {
+    position: absolute;
+    top: 75px;
+    left: 104px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .h1-index {
+    font-size: 29px;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 570px) {
+  .absolute-div {
+    position: absolute;
+    top: 75px;
+    left: 39px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .h1-index {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 569px) and (min-width: 400px) {
+  .pag-uno img {
+    width: 25%;
+    height: 25%;
+  }
+
+  .absolute-div {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .h1-index {
+    font-size: 17px;
+  }
+
+  .img-nosotros img {
+    margin: 5px;
+    width: 50%;
+    border-radius: 50%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .pag-uno img {
+    width: 25%;
+    height: 25%;
+  }
+
+  .absolute-div {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .h1-index {
+    font-size: 17px;
+  }
+
+  .img-nosotros img {
+    margin: 5px;
+    width: 50%;
+    border-radius: 50%;
+  }
+
+  .p-nosotros {
+    widows: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,316 @@
+@import '_colors';
+@import '_fonts';
+@import '_model';
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, p, a{
+    font-family:$tipo;
+}
+
+.section{
+    @extend %section;
+}
+
+/*HEADER*/
+
+header{
+    background-color: $brand-green;
+    position: fixed;
+}
+
+.nav-link{
+    color: $white !important;
+    &:hover{
+        background-color: $white;
+        color: $brand-green !important;
+    }
+}
+
+/* PORTADA*/
+.portada{
+    width: 100%;
+}
+
+.h1-index{ 
+    @extend %h-portada;
+}
+
+.btn-1{
+    z-index: 1;
+    background-color: $brand-green;
+    color: $white;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+
+.absolute-div {
+    position: absolute;
+    top: 241px;
+    left: 200px;
+    right: 0;
+    bottom: 0;
+}
+
+.absolute-div1 {
+    position: absolute;
+    top: 500px;
+    left: 236px;
+    right: 0;
+    bottom: 0;
+}
+
+.carousel-caption h1 {
+    display:table-cell;
+    vertical-align: left;
+    text-align:left;
+}
+
+.slide-imagenes img{
+    @extend %img-portada;
+}
+
+.carousel-caption{
+    @extend %caption;
+}
+
+/* NOSOTROS*/ 
+.nosotros{
+    background-color: $brand-blue;
+}
+
+.nosotros .titulo-section, .p-section{
+    color: $white;
+    text-align: center;
+}
+
+.img-nosotros img{
+    @extend %img-dr;
+}
+
+.name-nosotros {
+    @extend %name-dr;
+}
+
+.nosotros h2, .p-bold{
+    font-weight: $bold;
+}
+
+.nosotros .p-italic{
+    font-style: $italic;
+}
+
+.p-nosotros{
+    width: 80%;
+}
+
+.scroll-nos{
+    width: 100%;
+    overflow: auto;
+}
+/*TRATAMIENTOS*/
+.tratamientos{
+    background-color: $grey-white;
+}
+
+.tratamientos h2{
+    font-weight: $bold;
+    color: $brand-blue;
+}
+
+.link-tratamiento{
+    @extend %box-tratamiento;
+}
+
+.tratamientos a{
+    font-weight: $bold;
+    color: $brand-blue;
+    text-decoration: none;
+    &:hover{
+        @include hover-img;
+    }
+}
+
+/*OBRAS SOCIALES*/ 
+.photogrid{
+    @extend %sec-os;
+    .photo{
+        margin: 10px;
+    }
+}
+
+/*CONTACTO*/
+.contacto{
+    background-color: $grey-white;
+}
+
+.contacto .titulo-section{
+    color: $brand-blue;
+}
+
+.contacto h2, h3{
+    font-weight: $bold;
+    text-align: center;
+    color: $grey-text;
+}
+
+.contacto p{
+    text-align: center;
+    color: $grey-text;
+}
+
+.contactar .btn-primary{
+    background-color: $brand-blue;
+    &:hover{
+        cursor: pointer;
+        background-color: $white;
+        color: $brand-blue;
+    }
+}
+
+.button-contactar{
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/*BLOG*/ 
+.videos{
+    background-color: $brand-blue;
+}
+
+.videos .titulo-section{
+    color: $white;
+    font-weight: $bold;
+}
+
+.videos img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.link-video img:hover{
+    @include hover-img2;
+}
+
+/* FOOTER*/
+.footer{
+    background-image: $footer;
+    border-top: 1PX solid $white;
+}
+
+.footer .container{
+    align-items: flex-start;
+}
+
+.footer p{
+    color: $white;
+    font-size: 12px;
+}
+
+.f-section{
+    margin-top: 20px;
+}
+
+.footer img{
+    margin-bottom: 10px;
+}
+
+
+/*PAGINA TRATAMIENTOS*/
+
+.tratamiento p{
+    text-align: start;
+}
+
+.card-body p.italic{
+    @extend %p-italic-card;
+}
+
+.tratamiento h2{
+    color: $brand-blue;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tratamiento .btn-link{
+    color: $brand-blue;
+    font-weight: bold;
+}
+
+.img-tratamiento{
+    @extend %img-card;
+    img{ 
+        width: 90%;  
+    &:hover{
+        @include hover-img;
+    }
+    }
+}
+
+.info-tratamiento h3{
+    color: $brand-blue;
+}
+
+.info-tratamiento p{
+    color: $grey-text;
+}
+
+.li.tratamiento {
+    list-style: none;
+}
+
+/*PAGINA CONTACTAR*/ 
+.contactar p{
+    color: $grey-text;
+}
+
+.contactar-uno label{
+    font-family: $tipo;
+    color: $grey-text;
+    font-size: 15px;
+}
+
+.contactar input select{
+    margin: 15px 0;
+}
+
+.contactar-uno button{
+    background-color: $brand-green;
+}
+
+.caja{
+    @extend %box-form
+}
+
+.btn-contacto{
+    background-color: $brand-green;
+    color: $white;
+    margin: 0 10px;
+    &:hover{
+        background-color: $grey-white;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) and (min-width:961px){
+    @include portada-md;
+}
+@media only screen and (max-width: 960px) and (min-width:768px){
+    @include portada-960;
+}
+@media only screen and (max-width: 767px) and (min-width:570px){
+    @include media-767;
+}
+@media only screen and (max-width: 569px ) and (min-width: 415px ){
+    @include media-569;
+}
+@media only screen and (max-width: 414px ){
+    @include media-414;
+}
